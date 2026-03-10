@@ -1,0 +1,14 @@
+{
+  "name": "HK-ELT-Sandbox",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "innoverio.vscode-dbt-power-user"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install requests pandas snowflake-connector-python[pandas] dbt-snowflake openai",
+  "remoteUser": "vscode"
+}
